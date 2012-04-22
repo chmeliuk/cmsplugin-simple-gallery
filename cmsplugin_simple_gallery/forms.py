@@ -9,7 +9,7 @@ class AdminImageWidget(AdminFileWidget):
     def render(self, name, value, attrs=None):
         output = []
         if value and getattr(value, "url", None):
-            thumbnail = get_thumbnailer(value).thumbnailer.get_thumbnail_name(CMS_SIMPLEGALLERY_THUMBNAIL_OPTIONS)
+            thumbnail = get_thumbnailer(value).get_thumbnail_name(CMS_SIMPLEGALLERY_THUMBNAIL_OPTIONS)
             image_url = settings.MEDIA_URL + thumbnail
             file_name=str(value)
             output.append(u' <a href="%s" target="_blank"><img src="%s" alt="%s" style="height: 100px;" /></a><br /> %s ' %\
