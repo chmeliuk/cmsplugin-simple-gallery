@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='cmsplugin-simple-gallery',
-    version='0.0.1',
+    version='0.0.1.1',
     description='Simple django cms gallery plugin.',
     author='Denys Chmeliuk',
     author_email='d.chmeluyk@gmail.com',
